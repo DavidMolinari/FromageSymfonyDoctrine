@@ -52,4 +52,182 @@ class Ramassage
      * @ORM\JoinColumn(name="producteur_id", referencedColumnName="id", nullable=false)
      */
     private $producteur;
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set numBonRamassage
+     *
+     * @param integer $numBonRamassage
+     *
+     * @return Ramassage
+     */
+    public function setNumBonRamassage($numBonRamassage)
+    {
+        $this->numBonRamassage = $numBonRamassage;
+
+        return $this;
+    }
+
+    /**
+     * Get numBonRamassage
+     *
+     * @return integer
+     */
+    public function getNumBonRamassage()
+    {
+        return $this->numBonRamassage;
+    }
+
+    /**
+     * Set dateRamassage
+     *
+     * @param \DateTime $dateRamassage
+     *
+     * @return Ramassage
+     */
+    public function setDateRamassage($dateRamassage)
+    {
+        $this->dateRamassage = $dateRamassage;
+
+        return $this;
+    }
+
+    /**
+     * Get dateRamassage
+     *
+     * @return \DateTime
+     */
+    public function getDateRamassage()
+    {
+        return $this->dateRamassage;
+    }
+
+    /**
+     * Set nbBidons
+     *
+     * @param integer $nbBidons
+     *
+     * @return Ramassage
+     */
+    public function setNbBidons($nbBidons)
+    {
+        $this->nbBidons = $nbBidons;
+
+        return $this;
+    }
+
+    /**
+     * Get nbBidons
+     *
+     * @return integer
+     */
+    public function getNbBidons()
+    {
+        return $this->nbBidons;
+    }
+
+    /**
+     * Set nbLitres
+     *
+     * @param integer $nbLitres
+     *
+     * @return Ramassage
+     */
+    public function setNbLitres($nbLitres)
+    {
+        $this->nbLitres = $nbLitres;
+
+        return $this;
+    }
+
+    /**
+     * Get nbLitres
+     *
+     * @return integer
+     */
+    public function getNbLitres()
+    {
+        return $this->nbLitres;
+    }
+
+    /**
+     * Set txMatGrasses
+     *
+     * @param string $txMatGrasses
+     *
+     * @return Ramassage
+     */
+    public function setTxMatGrasses($txMatGrasses)
+    {
+        $this->txMatGrasses = $txMatGrasses;
+
+        return $this;
+    }
+
+    /**
+     * Get txMatGrasses
+     *
+     * @return string
+     */
+    public function getTxMatGrasses()
+    {
+        return $this->txMatGrasses;
+    }
+
+    /**
+     * Set ramasseur
+     *
+     * @param \AppBundle\Entity\Ramasseur $ramasseur
+     *
+     * @return Ramassage
+     */
+    public function setRamasseur(\AppBundle\Entity\Ramasseur $ramasseur)
+    {
+        $this->ramasseur = $ramasseur;
+
+        return $this;
+    }
+
+    /**
+     * Get ramasseur
+     *
+     * @return \AppBundle\Entity\Ramasseur
+     */
+    public function getRamasseur()
+    {
+        return $this->ramasseur;
+    }
+
+    /**
+     * Set producteur
+     *
+     * @param \AppBundle\Entity\Producteur $producteur
+     *
+     * @return Ramassage
+     */
+    public function setProducteur(\AppBundle\Entity\Producteur $producteur)
+    {
+        $this->producteur = $producteur;
+
+        return $this;
+    }
+
+    /**
+     * Get producteur
+     *
+     * @return \AppBundle\Entity\Producteur
+     */
+    public function getProducteur()
+    {
+        return $this->producteur;
+    }
 }

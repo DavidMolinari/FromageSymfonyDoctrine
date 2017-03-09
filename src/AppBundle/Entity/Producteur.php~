@@ -18,7 +18,7 @@ class Producteur
     /**
      * @ORM\Column(type="integer", nullable=false)
      */
-    private $codeProducteur;
+    private $codeProducteurffffff;
 
     /**
      * @ORM\Column(type="string", nullable=true)
@@ -91,27 +91,27 @@ class Producteur
     }
 
     /**
-     * Set codeProducteur
+     * Set codeProducteurffffff
      *
-     * @param integer $codeProducteur
+     * @param integer $codeProducteurffffff
      *
      * @return Producteur
      */
-    public function setcodeProducteur($codeProducteur)
+    public function setCodeProducteurffffff($codeProducteurffffff)
     {
-        $this->codeProducteur = $codeProducteur;
+        $this->codeProducteurffffff = $codeProducteurffffff;
 
         return $this;
     }
 
     /**
-     * Get codeProducteur
+     * Get codeProducteurffffff
      *
      * @return integer
      */
-    public function getcodeProducteur()
+    public function getCodeProducteurffffff()
     {
-        return $this->codeProducteur;
+        return $this->codeProducteurffffff;
     }
 
     /**
